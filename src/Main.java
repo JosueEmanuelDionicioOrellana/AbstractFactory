@@ -45,9 +45,9 @@ public class Main {
 				poder = Integer.parseInt(entrada.nextLine());
 				Diseño.separadores();
 				if(seleccion.equals("1")) {
-					creacion.setHeroe(nombre,tipoPoder,100,poder,"MARVEL");
+					creacion.getHeroe(nombre,tipoPoder,100,poder,"MARVEL");
 				}else {
-					creacion.setVillano(nombre,tipoPoder,100,poder,"MARVEL");
+					creacion.getVillano(nombre,tipoPoder,100,poder,"MARVEL");
 				}
 				break;
 			case "2":
@@ -65,9 +65,9 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.setHeroe(nombre,tipoPoder,100,poder,"DC");
+					creacion.getHeroe(nombre,tipoPoder,100,poder,"DC");
 				}else {
-					creacion.setVillano(nombre,tipoPoder,100,poder,"DC");
+					creacion.getVillano(nombre,tipoPoder,100,poder,"DC");
 				}
 				break;
 			case "3":
@@ -85,9 +85,9 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.setHeroe(nombre,tipoPoder,100,poder,"Nintendo");
+					creacion.getHeroe(nombre,tipoPoder,100,poder,"Nintendo");
 				}else {
-					creacion.setVillano(nombre,tipoPoder,100,poder,"Nintendo");
+					creacion.getVillano(nombre,tipoPoder,100,poder,"Nintendo");
 				}
 				break;
 			case "4":
@@ -109,9 +109,9 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.setHeroe(nombre,tipoPoder,100,poder,franquicia);
+					creacion.getHeroe(nombre,tipoPoder,100,poder,franquicia);
 				}else {
-					creacion.setVillano(nombre,tipoPoder,100,poder,franquicia);
+					creacion.getVillano(nombre,tipoPoder,100,poder,franquicia);
 				}
 				break;	
 		}
