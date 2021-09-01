@@ -29,7 +29,7 @@ public class Diseño {
 	
 	public static void tituloPersonaje(String titulo) {
 		Diseño.separadores();
-		Diseño.escrituras("			  "+titulo);
+		Diseño.escrituras("	   "+titulo);
 		Diseño.separadores();
 		Diseño.escrituras("Escoje entre:");
 		Diseño.escrituras("[1]. Heroe");

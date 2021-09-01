@@ -9,7 +9,8 @@ public class Main {
 	public static void main(String[] args) {
 		AbstractFactory creacion;
 		String seleccion;
-		String nombre;
+		String personaje = null;
+		String nombre ;
 		int poder;
 		String tipoPoder;
 		String franquicia;
@@ -45,9 +46,9 @@ public class Main {
 				poder = Integer.parseInt(entrada.nextLine());
 				Diseño.separadores();
 				if(seleccion.equals("1")) {
-					creacion.getHeroe(nombre,tipoPoder,100,poder,"MARVEL");
+					personaje=creacion.getHeroe(nombre,tipoPoder,100,poder,"MARVEL").getNombre();
 				}else {
-					creacion.getVillano(nombre,tipoPoder,100,poder,"MARVEL");
+					personaje=creacion.getVillano(nombre,tipoPoder,100,poder,"MARVEL").getNombre();
 				}
 				break;
 			case "2":
@@ -65,9 +66,9 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.getHeroe(nombre,tipoPoder,100,poder,"DC");
+					personaje=creacion.getHeroe(nombre,tipoPoder,100,poder,"DC").getNombre();
 				}else {
-					creacion.getVillano(nombre,tipoPoder,100,poder,"DC");
+					personaje=creacion.getVillano(nombre,tipoPoder,100,poder,"DC").getNombre();
 				}
 				break;
 			case "3":
@@ -85,9 +86,9 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.getHeroe(nombre,tipoPoder,100,poder,"Nintendo");
+					personaje=creacion.getHeroe(nombre,tipoPoder,100,poder,"Nintendo").getNombre();
 				}else {
-					creacion.getVillano(nombre,tipoPoder,100,poder,"Nintendo");
+					personaje=creacion.getVillano(nombre,tipoPoder,100,poder,"Nintendo").getNombre();
 				}
 				break;
 			case "4":
@@ -109,12 +110,16 @@ public class Main {
 				Diseño.separadores();
 				
 				if(seleccion.equals("1")) {
-					creacion.getHeroe(nombre,tipoPoder,100,poder,franquicia);
+					personaje=creacion.getHeroe(nombre,tipoPoder,100,poder,franquicia).getNombre();
 				}else {
-					creacion.getVillano(nombre,tipoPoder,100,poder,franquicia);
+					personaje=creacion.getVillano(nombre,tipoPoder,100,poder,franquicia).getNombre();
 				}
 				break;	
 		}
+		Diseño.separadores();
+		Diseño.escrituras("Se creo el personaje llamado");
+		Diseño.escrituras(personaje);
+		Diseño.separadores();
 	}
-
+ 
 }

@@ -11,7 +11,7 @@ public class FactoryDC implements AbstractFactory{
 	@Override
 	public Heroe getHeroe(String nombre, String tipoPoder, int vida, int poder, String franquicia) {
 		// TODO Esbozo de método generado automáticamente
-		return new HeroeDC(nombre, tipoPoder, 100, poder, franquicia);
+		return new HeroeDC(nombre,tipoPoder,100,poder,franquicia);
 	}
 
 	@Override
